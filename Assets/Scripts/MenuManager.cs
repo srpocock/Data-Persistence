@@ -2,10 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
-#if UNITY_EDITOR
-using UnityEditor;
-#endif
+using TMPro;
 
 [DefaultExecutionOrder(1000)]
 public class MenuManager : MonoBehaviour
@@ -21,17 +18,14 @@ public class MenuManager : MonoBehaviour
     // For Start Button
     public void StartNew()
     {
-        HighScoreManager.Instance.playerName = nameInput.GetComponent<InputField>().text;
+        HighScoreManager.Instance.playerName = nameInput.GetComponent<TMP_InputField>().text;
+        Debug.Log(HighScoreManager.Instance.playerName);
         SceneManager.LoadScene(1);
     }
 
-    public void Exit()
+    // Update is called once per frame
+    void Update()
     {
-
-#if UNITY_EDITOR
-        EditorApplication.ExitPlaymode();
-#else
-        Application.Quit();
-#endif
+        
     }
 }

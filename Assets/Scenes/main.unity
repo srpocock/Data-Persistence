@@ -849,7 +849,7 @@ MonoBehaviour:
   ScoreText: {fileID: 188020406}
   HighScoreText: {fileID: 2078529056}
   GameOverText: {fileID: 474497238}
-  playerName: 
+  m_Points: 0
 --- !u!4 &1059192546
 Transform:
   m_ObjectHideFlags: 0
@@ -972,7 +972,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee19acfba77e9084fb4ce7ee7ff9e3d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Manager: {fileID: 0}
+  Manager: {fileID: 1059192545}
 --- !u!1 &1288645155
 GameObject:
   m_ObjectHideFlags: 0
